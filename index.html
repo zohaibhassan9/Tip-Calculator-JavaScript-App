@@ -7,7 +7,23 @@
 </head>
 <body>
     <h2>Tip-Calculator-JavaScript-App</h2>
-
+    <div class="calculator">
+        <div>
+          <label for="billAmount">Bill Amount ($):</label>
+          <input type="number" id="billAmount" placeholder="Enter bill amount">
+        </div>
+        <div>
+          <label for="tipPercentage">Tip Percentage:</label>
+          <select id="tipPercentage">
+            <option value="0.1">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.2">20%</option>
+          </select>
+        </div>
+        <button id="calculateBtn">Calculate Tip</button>
+        <div class="error" id="error"></div>
+        <div class="result" id="result"></div>
+      </div>
 
 
 <script src="app.js"></script>    
